@@ -94,7 +94,7 @@ import pytesseract
 def ocr_core(filename,left,top,right,bottom):
     cropped = Image.open(filename).crop((left,top,right,bottom))
     text = pytesseract.image_to_string(cropped)
-    cropped.show()    #Show cropped roi
+    # cropped.show()    #Show cropped roi
     return text
 
 # Step 4: Write result into a text file
