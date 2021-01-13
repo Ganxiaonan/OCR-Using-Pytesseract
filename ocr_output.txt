@@ -1,0 +1,34 @@
+
+your detail:
+‘Your details:
+FROM
+XYZ Seller
+
+123 Sell Street
+Orange Country
+---------------------------------------------------------
+client detail:
+Client's details:
+10
+XYZ Buyer
+
+123 Buy Lane
+Blue Country
+---------------------------------------------------------
+invoice number & invoice date:
+tewoice No : 201000
+
+ 
+---------------------------------------------------------
+product:
+‘Website Design 40 50.00 $3,200.00
+
+‘Slicing PSD & Coding HTML, 25 90.00 $2,000.00
+---------------------------------------------------------
+invoice summary:
+Subtotal $5,200.00
+
+Tax (16.25%) $3845.00
+
+Total $6,085.00
+---------------------------------------------------------
