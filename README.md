@@ -2,8 +2,10 @@
 Machine Vision System Assignment: Use OCR to detect shipping document
 
 To use the repository:
-1. go into the virtual machine:
-    source venv_ocr/bin/activate
+
+1. virtualenv venv                #create a virtual environment
+2. source venv/bin/activate       #activate virtual environment
+3. pip install -r requirements.txt
 2. python ocr.py
 
 reference:
