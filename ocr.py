@@ -9,12 +9,12 @@ subject_top_left = [(28,93),(290,93),(29,219),(26,324),(314,479)]
 subject_bottom_right = [(280,200),(540,206),(223,273),(538,397),(538,590)]
 
 # Step 2: align reference picture and input picture
-
+imageFilename = 'invoice_raw1'
 refFilename = "invoice.png"
-imFilename = "invoice_raw1.jpg"
+imFilename = f"input_images/{imageFilename}.jpg"
 concate_img = "matches.jpg"
 outFilename = "aligned.jpg"
-output_text_file = "ocr_output.txt"
+output_text_file = f"{imageFilename}.txt"
 
 MAX_FEATURES = 500
 GOOD_MATCH_PERCENT = 0.15
@@ -25,7 +25,9 @@ def alignImages(im1, im2):
   im1Gray = cv2.cvtColor(im1, cv2.COLOR_BGR2GRAY)
   im2Gray = cv2.cvtColor(im2, cv2.COLOR_BGR2GRAY)
 
-  # Detect ORB features and compute descriptors.
+  # Detect ORB features and compute descriptors.    #Oriented Fast and Rotated Brief
+  # FAST to find key point -> Harris Corner find top N points -> pyramid get multiscale feature ->
+  # BRIEF descriptor
   orb = cv2.ORB_create(MAX_FEATURES)
   keypoints1, descriptors1 = orb.detectAndCompute(im1Gray, None)
   keypoints2, descriptors2 = orb.detectAndCompute(im2Gray, None)
@@ -94,7 +96,7 @@ import pytesseract
 def ocr_core(filename,left,top,right,bottom):
     cropped = Image.open(filename).crop((left,top,right,bottom))
     text = pytesseract.image_to_string(cropped)
-    # cropped.show()    #Show cropped roi
+    #cropped.show()    #Show cropped roi
     return text
 
 # Step 4: Write result into a text file

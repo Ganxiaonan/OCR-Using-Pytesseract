@@ -1,14 +1,15 @@
 
 your detail:
-Your details:
-FROM,
+‘Your details:
+FROM
+
 XYZ Seller
 
 123 Sell Street
 Orange Country
 ---------------------------------------------------------
 client detail:
-‘Client's details:
+Client's details:
 10
 XYZ Buyer
 
@@ -16,27 +17,17 @@ XYZ Buyer
 Blue Country
 ---------------------------------------------------------
 invoice number & invoice date:
-Iewenice Wo : 201000
-‘patina mnetan:= haa Z7WA, 2020
+ 
 ---------------------------------------------------------
 product:
- 
+Website Design 40 80.00 $3,200.00
 
-$3,200
-
-website Design
-on 20000
-
-caine PSD & Coding HTML
+‘Slicing PSD & Coding HTML, a 80.00 $2,000.00
 ---------------------------------------------------------
 invoice summary:
-ax 16258
+Subtotal $5,200.00
 
-va!
+Tax (16.25%) $845.00
 
-eee F
-
-326.00
-
-somo
+Total $6,035.00
 ---------------------------------------------------------
